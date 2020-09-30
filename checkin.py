@@ -26,7 +26,7 @@ def start():
         time = time.split('.')[0]
         #print(time)
         if sever == 'on':
-            requests.get('https://sc.ftqq.com/')
+            requests.get('https://sc.ftqq.com/' + sckey + 'you have '+time+' days left')
     else:
         requests.get('https://sc.ftqq.com/' + sckey + '.send?text=cookie过期')
 
